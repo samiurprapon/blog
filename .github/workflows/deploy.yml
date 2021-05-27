@@ -35,5 +35,4 @@ jobs:
         git remote set-url origin https://${{secrets.PERSONAL_ACCESS_TOKEN}}@github.com/samiurprapon/blog.git
 
         CI=false npm run deploy
-      env:
-        REACT_APP_GITHUB_TOKEN: ${{secrets.WEBSITE_SECRET}}
+      
