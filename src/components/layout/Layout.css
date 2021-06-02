@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+}
+
+.main {
+  width: 70%;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 20px;
+}
+
+.items {
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+    width: 90%;
+    padding: 20px 10px;
+    margin: 0px auto;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .main {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .items {
+    justify-content: center;
+  }
+}

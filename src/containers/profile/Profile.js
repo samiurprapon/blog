@@ -16,18 +16,13 @@ export default function Profile() {
   useEffect(() => {
     const getProfileData = () => {
       let result = {
-        data: {
-          user: {
-            name: "Samiur Prapon",
-            bio: "♦️ World is Diamond Shaped.",
-            avatarUrl:
-              "https://avatars.githubusercontent.com/u/25266703",
-            location: "Bangladesh",
-          },
-        },
+        name: "Samiur Prapon",
+        bio: "♦️ World is Diamond Shaped.",
+        avatarUrl: "https://avatars.githubusercontent.com/u/25266703",
+        location: "Bangladesh",
       };
 
-      setProfileFunction(result.data.user);
+      setProfileFunction(result);
     };
 
     getProfileData();
