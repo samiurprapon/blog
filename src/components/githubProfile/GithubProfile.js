@@ -7,7 +7,7 @@ import { Fade } from "react-reveal";
 export default function GithubProfileCard({ prof }) {
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="contact">
+      <div className="main">
         <div className="row">
 
 
@@ -21,7 +21,7 @@ export default function GithubProfileCard({ prof }) {
             />
           </div>
 
-          <div className="main-content-profile">
+          <div >
             <h2 className="bio-text">"{emoji(String(prof.bio) + '"')}</h2>
             <SocialMedia />
           </div>

@@ -6,7 +6,7 @@ import Profile from "../../containers/profile/Profile";
 const Layout = (props) => {
   return (
     <div className="container">
-      <section className="main">
+      <section className="blog-posts">
         <div>Blog Posts</div>
       </section>
 
