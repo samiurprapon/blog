@@ -4,21 +4,18 @@
   padding: 20px 10px;
   margin: 0px auto;
   justify-content: center;
-
 }
 
 .blog-posts {
   width: 70%;
   padding: 20px;
-  text-align: center
+  text-align: center;
 }
 
 .sidebar {
   width: 30%;
-  padding: 20px;
   align-content: center;
-  text-align: center
-
+  text-align: center;
 }
 
 .items {
