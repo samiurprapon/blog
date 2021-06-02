@@ -11,7 +11,7 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="http://samiurprapon.github.io" className="logo">
+        <a href="http://samiurprapon.github.io" className={isDark ? "dark-menu logo" : "logo"}>
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{"SamiurPrapon"}</span>
           <span className="grey-color">/&gt;</span>

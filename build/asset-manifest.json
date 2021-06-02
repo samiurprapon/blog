@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/samiurprapon/blog/static/css/main.9a57aa8e.chunk.css",
-    "main.js": "/samiurprapon/blog/static/js/main.7ad406e2.chunk.js",
-    "main.js.map": "/samiurprapon/blog/static/js/main.7ad406e2.chunk.js.map",
-    "runtime-main.js": "/samiurprapon/blog/static/js/runtime-main.e14b93d7.js",
-    "runtime-main.js.map": "/samiurprapon/blog/static/js/runtime-main.e14b93d7.js.map",
-    "static/js/2.c409ffa5.chunk.js": "/samiurprapon/blog/static/js/2.c409ffa5.chunk.js",
-    "static/js/2.c409ffa5.chunk.js.map": "/samiurprapon/blog/static/js/2.c409ffa5.chunk.js.map",
-    "index.html": "/samiurprapon/blog/index.html",
-    "static/css/main.9a57aa8e.chunk.css.map": "/samiurprapon/blog/static/css/main.9a57aa8e.chunk.css.map",
-    "static/js/2.c409ffa5.chunk.js.LICENSE.txt": "/samiurprapon/blog/static/js/2.c409ffa5.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/samiurprapon/blog/static/media/Montserrat-Regular.3cd78665.ttf"
+    "main.css": "/blog/static/css/main.3c9614be.chunk.css",
+    "main.js": "/blog/static/js/main.07c1d877.chunk.js",
+    "main.js.map": "/blog/static/js/main.07c1d877.chunk.js.map",
+    "runtime-main.js": "/blog/static/js/runtime-main.06a0734a.js",
+    "runtime-main.js.map": "/blog/static/js/runtime-main.06a0734a.js.map",
+    "static/js/2.e102b0b3.chunk.js": "/blog/static/js/2.e102b0b3.chunk.js",
+    "static/js/2.e102b0b3.chunk.js.map": "/blog/static/js/2.e102b0b3.chunk.js.map",
+    "static/css/3.40684382.chunk.css": "/blog/static/css/3.40684382.chunk.css",
+    "static/js/3.85c942b7.chunk.js": "/blog/static/js/3.85c942b7.chunk.js",
+    "static/js/3.85c942b7.chunk.js.map": "/blog/static/js/3.85c942b7.chunk.js.map",
+    "index.html": "/blog/index.html",
+    "static/css/3.40684382.chunk.css.map": "/blog/static/css/3.40684382.chunk.css.map",
+    "static/css/main.3c9614be.chunk.css.map": "/blog/static/css/main.3c9614be.chunk.css.map",
+    "static/js/2.e102b0b3.chunk.js.LICENSE.txt": "/blog/static/js/2.e102b0b3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/blog/static/media/Montserrat-Regular.3cd78665.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.e14b93d7.js",
-    "static/js/2.c409ffa5.chunk.js",
-    "static/css/main.9a57aa8e.chunk.css",
-    "static/js/main.7ad406e2.chunk.js"
+    "static/js/runtime-main.06a0734a.js",
+    "static/js/2.e102b0b3.chunk.js",
+    "static/css/main.3c9614be.chunk.css",
+    "static/js/main.07c1d877.chunk.js"
   ]
 }
