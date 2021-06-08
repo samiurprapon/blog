@@ -1,9 +1,9 @@
   .prof-title {
-    display: flexbox;
     text-align: center;
-    margin: 20px 0px;
-    font-size: 32px;
-    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    /* font-weight: 00; */
   }
 
   @media (max-width: 768px) {

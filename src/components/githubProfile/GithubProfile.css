@@ -14,10 +14,6 @@
 }
 
 .prof-title {
-  display: flexbox;
-  text-align: center;
-  margin: 20px 0px;
-  font-size: 32px;
   font-weight: 400;
 }
 

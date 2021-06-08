@@ -1,21 +1,22 @@
 .container {
   display: flex;
-  width: 90%;
+  width: 96%;
   padding: 20px 10px;
   margin: 0px auto;
   justify-content: center;
+  list-style:none ;
 }
 
 .blog-posts {
-  width: 70%;
+  width: 74%;
   padding: 20px;
   text-align: center;
 }
 
 .sidebar {
-  width: 30%;
-  align-content: center;
-  text-align: center;
+  display: list-item;
+  padding: 4px;
+  /* text-align: center; */
 }
 
 .items {

@@ -1,25 +1,25 @@
 .blogList {
   display: flex;
   padding: 10px 10px;
-  margin: 8px auto;
+  margin: 10px;
   justify-content: space-around;
 }
 
 .image {
-  height: 125px;
+  height: 115px;
   width: auto;
 }
 
 .blogImg {
-  width: 40%;
   height: auto;
   max-height: 120px;
   padding: 8px;
-  margin: 10px 0px;
+  margin: 3px 0px;
 }
 
 .title {
-  margin: 16px 0px;
+  margin: 10px 0px;
+  font-weight: normal;
 }
 
 .blog-body {
@@ -33,6 +33,7 @@
   font-size: 1rem;
   font-weight: normal;
   text-align: left;
+  margin: 4px auto;
   float: left;
   clear: both;
 }
@@ -43,11 +44,12 @@
   text-align: right;
   float: left;
   clear: both;
-  margin: 0px 0px;
+  margin: 4px 0px;
 }
 
 .reading-time {
   text-align: right;
+  margin: 4px auto;
 }
 
 .card {
@@ -63,12 +65,12 @@
 @media (max-width: 768px) {
   .blogList {
     display: flex;
-    padding: 10px 10px;
-    margin: 0px auto;
+    padding: 8px 8px;
+    margin: 0px 0px;
     justify-content: space-around;
   }
   .blogImg {
-    width: 40%;
+    /* width: 40%; */
     height: auto;
     max-height: 120px;
     padding: 10px;
@@ -76,7 +78,7 @@
   }
 
   .title {
-    margin: 16px 0px;
+    margin: 10px auto;
   }
 
   .blog-body {
@@ -99,10 +101,10 @@
     font-size: 1rem;
     color: rgb(83, 83, 83);
     font-weight: normal;
-    text-align: right;
     float: left;
     clear: both;
     margin: 0px 0px;
+    margin-top: 30px;
   }
 
   .reading-time {

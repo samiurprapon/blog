@@ -1,5 +1,4 @@
 import React from "react";
-import { Fade } from "react-reveal";
 
 import "./Layout.css";
 
@@ -9,27 +8,25 @@ import RecentPost from "../../components/recentPost/RecentPost";
 
 const Layout = (props) => {
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="container">
-        <section className="blog-posts">
-          <div>Blog Posts</div>
-        </section>
+    <div className="container">
+      <section className="blog-posts">
+        {/* <div>Blog Posts</div> */}
+      </section>
 
-        <section className="sidebar">
-          <div className="items">
-            <RecentHeader />
-            <RecentPost />
-            <RecentPost />
-            <RecentPost />
-            <br/>
-          </div>
+      <section className="sidebar">
+        <div className="items">
+          <RecentHeader />
+          <RecentPost />
+          <RecentPost />
+          <RecentPost />
+          <br />
+        </div>
 
-          <div className="items">
-            <Profile />
-          </div>
-        </section>
-      </div>
-    </Fade>
+        <div className="items">
+          <Profile />
+        </div>
+      </section>
+    </div>
   );
 };
 
