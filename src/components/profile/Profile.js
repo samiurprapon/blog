@@ -3,7 +3,7 @@ import Loading from "../loading/Loading";
 
 const renderLoader = () => <Loading />;
 const GithubProfile = lazy(() =>
-  import("../../components/githubProfile/GithubProfile")
+  import("../githubProfile/GithubProfile")
 );
 
 export default function Profile() {

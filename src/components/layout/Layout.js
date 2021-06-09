@@ -2,9 +2,9 @@ import React from "react";
 
 import "./Layout.css";
 
-import Profile from "../../containers/profile/Profile";
-import RecentHeader from "../../components/recentHeader/RecentHeader";
-import RecentPost from "../../components/recentPost/RecentPost";
+import Profile from "../profile/Profile";
+import RecentHeader from "../recentHeader/RecentHeader";
+import RecentPost from "../recentPost/RecentPost";
 
 const Layout = (props) => {
   return (
