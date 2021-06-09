@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+
 import Headroom from "react-headroom";
 import "./Header.css";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -11,11 +13,11 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="http://samiurprapon.github.io" className={isDark ? "dark-menu logo" : "logo"}>
+        <Link to="/" className={isDark ? "dark-menu logo" : "logo"}>
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{"SamiurPrapon"}</span>
           <span className="grey-color">/&gt;</span>
-        </a>
+        </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
@@ -28,26 +30,26 @@ function Header() {
           <li>
             <a href="/blog">Home</a>
           </li>
-          {(
+          {
             <li>
-              <a href="#philosophy">Philosophy</a>
+              <Link to="/blog/philosophy">Philosophy</Link>
             </li>
-          )}
-          {(
+          }
+          {
             <li>
-              <a href="#learning">Programmings</a>
+              <Link to="/blog/learning">Programmings</Link>
             </li>
-          )}
-          {(
+          }
+          {
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="/blog/projects">Projects</Link>
             </li>
-          )}
-          {(
+          }
+          {
             <li>
-              <a href="#tools">Tools</a>
+              <Link to="/blog/tools">Tools</Link>
             </li>
-          )}
+          }
           <li>
             <a>
               <ToggleSwitch />

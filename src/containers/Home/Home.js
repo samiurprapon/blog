@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import Top from "../components/topbutton/Top";
-import Layout from "../components/layout/Layout";
-import { StyleProvider } from "../contexts/StyleContext";
-import "./Main.css";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import Top from "../../components/topbutton/Top";
+import Layout from "../../components/layout/Layout";
+import { StyleProvider } from "../../contexts/StyleContext";
+import "./Home.css";
 
 export default class Main extends Component {
   constructor(props) {
