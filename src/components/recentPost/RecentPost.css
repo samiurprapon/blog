@@ -66,7 +66,7 @@
   .blogList {
     display: flex;
     padding: 8px 8px;
-    margin: 0px 0px;
+    margin: 10px 0px;
     justify-content: space-around;
   }
   .blogImg {
@@ -104,7 +104,7 @@
     float: left;
     clear: both;
     margin: 0px 0px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .reading-time {

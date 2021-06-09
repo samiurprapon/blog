@@ -9,6 +9,10 @@
   transition: all 0.3s ease-out;
 }
 
+.main-content-profile {
+  flex: 80%;
+}
+
 .profile-image:hover {
   box-shadow: rgba(0, 0, 0, 1) 0 30px 30px -30px;
 }

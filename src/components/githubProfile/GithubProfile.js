@@ -8,11 +8,8 @@ export default function GithubProfileCard({ prof }) {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main">
-        <div className="row">
-
-
         <h1 className="prof-title">Author</h1>
-
+        <div className="row">
           <div className="image-content-profile">
             <img
               src={prof.avatarUrl}
@@ -20,8 +17,7 @@ export default function GithubProfileCard({ prof }) {
               className="profile-image"
             />
           </div>
-
-          <div >
+          <div class="main-content-profile">
             <h2 className="bio-text">"{emoji(String(prof.bio) + '"')}</h2>
             <SocialMedia />
           </div>
