@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import Top from "../../components/topbutton/Top";
-import Layout from "../../components/layout/Layout";
 import { StyleProvider } from "../../contexts/StyleContext";
 import "./Home.css";
 
-export default class Main extends Component {
+import Layout from "../../components/layout/Layout";
+
+export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,10 +27,7 @@ export default class Main extends Component {
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
           {/* rest codes will be here */}
-          <Header />
           <Layout/>
-          <Footer />
-          <Top />
         </StyleProvider>
       </div>
     );

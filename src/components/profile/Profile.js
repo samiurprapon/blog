@@ -2,9 +2,7 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 import Loading from "../loading/Loading";
 
 const renderLoader = () => <Loading />;
-const GithubProfile = lazy(() =>
-  import("../githubProfile/GithubProfile")
-);
+const GithubProfile = lazy(() => import("../githubProfile/GithubProfile"));
 
 export default function Profile() {
   const [prof, setrepo] = useState([]);
@@ -30,7 +28,7 @@ export default function Profile() {
 
   return (
     <Suspense fallback={renderLoader()}>
-      <GithubProfile prof={prof} key={prof.id} />
+      <GithubProfile prof={prof} />
     </Suspense>
   );
 }

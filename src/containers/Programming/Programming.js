@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import Top from "../../components/topbutton/Top";
-import Layout from "../../components/layout/Layout";
 import { StyleProvider } from "../../contexts/StyleContext";
 import "./Programming.css";
+
+import Layout from "../../components/layout/Layout";
 
 export default class Programming extends Component {
   constructor(props) {
@@ -28,10 +26,7 @@ export default class Programming extends Component {
         <StyleProvider
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
-          <Header />
-          <Layout/>
-          <Footer />
-          <Top />
+          <Layout />
         </StyleProvider>
       </div>
     );
