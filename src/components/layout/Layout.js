@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Layout.css";
-
+import Blog from "../list/PostList";
 import Profile from "../profile/Profile";
 import RecentHeader from "../recentHeader/RecentHeader";
 import RecentPost from "../recentPost/RecentPost";
@@ -10,7 +10,9 @@ const Layout = (props) => {
   return (
     <div className="container">
       <section className="blog-posts">
-        {/* <div>Blog Posts</div> */}
+        <div>
+          <Blog/>
+        </div>
       </section>
 
       <section className="sidebar">

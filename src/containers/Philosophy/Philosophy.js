@@ -4,7 +4,6 @@ import "./Philosophy.css";
 
 import Layout from "../../components/layout/Layout";
 
-
 export default class Philosophy extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +26,7 @@ export default class Philosophy extends Component {
         <StyleProvider
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
-          <Layout/>
+          <Layout />
         </StyleProvider>
       </div>
     );

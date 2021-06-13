@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { ApolloProvider } from "@apollo/react-hooks";
+import { client } from "./utils/Apollo";
 import { StyleProvider } from "./contexts/StyleContext";
 
 import Header from "./components/header/Header";
@@ -13,6 +15,8 @@ import Philosophy from "./containers/Philosophy/Philosophy";
 import Programming from "./containers/Programming/Programming";
 import Project from "./containers/Project/Project";
 import Tools from "./containers/Tools/Tools";
+
+import BlogPost from "./containers/BlogPost/BlogPost";
 
 class App extends Component {
   constructor(props) {
@@ -37,19 +41,26 @@ class App extends Component {
         <StyleProvider
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
-          <BrowserRouter>
-          <Header />
+          <ApolloProvider client={client}>
+            <BrowserRouter>
+              <Header />
 
-            <Switch>
-              <Route path="/blog/" exact component={Home} />
-              <Route path="/blog/philosophy" exact component={Philosophy} />
-              <Route path="/blog/learning" exact component={Programming} />
-              <Route path="/blog/projects" exact component={Project} />
-              <Route path="/blog/tools" exact component={Tools} />
-            </Switch>
-          </BrowserRouter>
-          <Footer />
-          <Top />
+              <Switch>
+                <Route exact path="/blog/" component={Home} />
+                <Route exact path="/blog/philosophy" component={Philosophy} />
+                <Route exact path="/blog/learning" component={Programming} />
+                <Route exact path="/blog/projects" component={Project} />
+                <Route exact path="/blog/tools" component={Tools} />
+                <Route
+                  exact
+                  path="/blog/:title/:issueNumber"
+                  component={BlogPost}
+                />
+              </Switch>
+            </BrowserRouter>
+            <Footer />
+            <Top />
+          </ApolloProvider>
         </StyleProvider>
       </div>
     );
