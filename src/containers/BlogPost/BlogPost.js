@@ -4,9 +4,15 @@ import Markdown from "markdown-to-jsx";
 import readingTime from "reading-time";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
+import "./BlogPost.css";
+
 
 import config from "../../config";
 import Loader from "../../components/loader/Loader";
+import RecentHeader from "../../components/recentHeader/RecentHeader";
+import RecentPost from "../../components/recentPost/RecentPost";
+
+import Profile from "../../components/profile/Profile";
 
 import { HyperLink, CodeBlock } from "../../components/markDown/MarkDown";
 
@@ -84,44 +90,60 @@ export default function BlogPost() {
   }
 
   return (
-    <>
-      {post.title && (
-        <PostContainer>
-          <PostTitle>{post.title}</PostTitle>
-          <div>
-            <AuthorDetails>
-              <AuthorAvatar
-                src={post.author.avatarUrl}
-                alt={post.author.login}
-              />
+    <div className="center">
+      <section className="post">
+          {post.title && (
+            <PostContainer>
+              <PostTitle>{post.title}</PostTitle>
               <div>
-                <AuthorName>{post.author.login}</AuthorName>
-                <PostDate>
-                  {moment(post.updatedAt).format("DD MMM YYYY")} .
-                  {readingTime(post.body).minutes} Min Read .
-                  <PostDateLink href={post.url} target="_black">
-                    View On Github
-                  </PostDateLink>
-                </PostDate>
+                <AuthorDetails>
+                  <AuthorAvatar
+                    src={post.author.avatarUrl}
+                    alt={post.author.login}
+                  />
+                  <div>
+                    <AuthorName>{post.author.login}</AuthorName>
+                    <PostDate>
+                      {moment(post.updatedAt).format("DD MMM YYYY")} .
+                      {readingTime(post.body).minutes} Min Read .
+                      <PostDateLink href={post.url} target="_black">
+                        View On Github
+                      </PostDateLink>
+                    </PostDate>
+                  </div>
+                </AuthorDetails>
               </div>
-            </AuthorDetails>
-          </div>
-          <Markdown
-            options={{
-              overrides: {
-                a: {
-                  component: HyperLink,
-                },
-                pre: {
-                  component: CodeBlock,
-                },
-              },
-            }}
-          >
-            {post.body}
-          </Markdown>
-        </PostContainer>
-      )}
-    </>
+              <Markdown
+                options={{
+                  overrides: {
+                    a: {
+                      component: HyperLink,
+                    },
+                    pre: {
+                      component: CodeBlock,
+                    },
+                  },
+                }}
+              >
+                {post.body}
+              </Markdown>
+            </PostContainer>
+          )}
+      </section>
+
+      <section className="sidebar">
+        <div className="items">
+          <RecentHeader title={"Related Post"} />
+          <RecentPost />
+          <RecentPost />
+          <RecentPost />
+          <br />
+        </div>
+
+        <div className="items">
+          <Profile />
+        </div>
+      </section>
+    </div>
   );
 }

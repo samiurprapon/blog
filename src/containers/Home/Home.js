@@ -34,7 +34,7 @@ export default class Home extends Component {
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
           {/* rest codes will be here */}
-          <Layout />
+          <Layout recent={{title: "Most readed articles"}}/>
         </StyleProvider>
       </div>
     );

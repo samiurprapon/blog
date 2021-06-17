@@ -17,7 +17,7 @@ const Layout = (props) => {
 
       <section className="sidebar">
         <div className="items">
-          <RecentHeader />
+          <RecentHeader title={props.recent.title}/>
           <RecentPost />
           <RecentPost />
           <RecentPost />

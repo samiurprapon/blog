@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const PostTitle = styled.h1`
-  @media only screen and (max-width: 768px) {
-    font-size: 30px;
-  }
+  font-size: 32px;
+  line-height: normal;
 `;
 
 export default PostTitle;

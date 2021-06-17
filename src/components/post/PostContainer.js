@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const PostContainer = styled.div`
-  margin: 2rem auto 0;
-  width: 90%;
-  max-width: 700px;
-  padding: 20px 10px;
-  position: relative;
+  width: 99%;
+  max-width: 99%x;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left:4%;
 `;
 
 export default PostContainer;

@@ -1,15 +1,18 @@
-.container {
+.center {
   display: flex;
-  width: 96%;
   padding: 20px 10px;
   margin: 0px auto;
-  list-style:none ;
+  list-style: none;
 }
 
-.blog-posts {
+.post {
   width: 74%;
   padding: 20px;
-  text-align: justify;
+}
+
+.post img {
+  max-width: 70%;
+  text-align: left;
 }
 
 .sidebar {
@@ -23,18 +26,13 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .center {
     display: block;
     width: 90%;
     padding: 20px 10px;
     margin: 0px auto;
     margin-top: 1rem;
     justify-content: center;
-  }
-
-  .main {
-    width: 100%;
-    box-sizing: border-box;
   }
 
   .sidebar {
@@ -46,4 +44,10 @@
   .items {
     justify-content: center;
   }
+
+  .post img {
+  max-width: 90%;
+  text-align: left;
+}
+
 }
