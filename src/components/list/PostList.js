@@ -10,7 +10,7 @@ import Card from "../blog/Card/Card";
 const GET_POSTS = gql`
 {
   repository(owner: "${config.githubUserName}", name: "${config.githubRepo}") {
-    issues(first: 100, states: CLOSED, filterBy: { labels: "enhancement" }, orderBy: { direction: DESC, field: CREATED_AT }) {
+    issues(first: 100, states: CLOSED, filterBy: { labels: "blog" }, orderBy: { direction: DESC, field: CREATED_AT }) {
       nodes {
         title
         body
