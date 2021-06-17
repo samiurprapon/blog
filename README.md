@@ -105,7 +105,6 @@ You may obtain a copy of the License at
 
    https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
-
 Everyone is permitted to copy and distribute verbatim copies
 of this license document, but changing it is not allowed.
 
