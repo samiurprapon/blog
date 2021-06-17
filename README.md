@@ -69,7 +69,7 @@ After doing following changes now you just need to write a blog on repository is
 - Now write your blog in github issue in markdown. You can also use [slack edit](https://stackedit.io/app#) to write your markdown
 - Add a label `blog` on your github issue to make it different from other standard issues. Keep in mind `blog` label is mandatory otherwise it won't show on your website.
 
-### 5. **Deploy**
+### 6. **Deploy**
 0. Build webpage
 ```bash
 $ yarn run build
