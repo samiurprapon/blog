@@ -101,10 +101,12 @@ Pull requests are welcome! See the [contributor guidelines](/CONTRIBUTING.md) fo
 Copyright 2021 Samiur Prapon
 
 Licensed under the GNU General Public License, Version 2.0 (the "License");
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
 You may obtain a copy of the License at
 
    https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
+
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
 
 ```
