@@ -7,10 +7,15 @@ import Loader from "../loader/Loader";
 import BlogContainer from "../blog/BlogContainer";
 import Card from "../blog/Card/Card";
 
-const GET_POSTS = gql`
+const GET_POSTS = (label) => {
+
+  if(label == null) {
+    label = "blog"
+  }
+return  gql`
 {
   repository(owner: "${config.githubUserName}", name: "${config.githubRepo}") {
-    issues(first: 100, states: CLOSED, filterBy: { labels: "blog" }, orderBy: { direction: DESC, field: CREATED_AT }) {
+    issues(first: 100, filterBy: { labels: "${label}" }, orderBy: { direction: DESC, field: CREATED_AT }) {
       nodes {
         title
         body
@@ -36,10 +41,11 @@ const GET_POSTS = gql`
   }
 }
 `;
+};
 
-const Blog = (props) => {
+const PostList = (props) => {
   const [posts, setPosts] = useState([]);
-  const { loading, error, data } = useQuery(GET_POSTS);
+  const { loading, error, data } = useQuery(GET_POSTS(props.label));
 
   useEffect(() => {
     if (!loading) {
@@ -68,4 +74,4 @@ const Blog = (props) => {
   );
 };
 
-export default Blog;
+export default PostList;

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { StyleProvider } from "../../contexts/StyleContext";
-// import Axios from '../../utils/Axios';
 import "./Home.css";
 
 import Layout from "../../components/layout/Layout";
@@ -10,7 +9,7 @@ export default class Home extends Component {
     super(props);
     this.state = {
       isDark: false,
-      posts: []
+      posts: [],
     };
   }
 
@@ -18,8 +17,6 @@ export default class Home extends Component {
     const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
 
     // get posts belongs to each labels
-    
-
 
     this.setState({ isDark: darkPref.matches });
   }
@@ -34,7 +31,7 @@ export default class Home extends Component {
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
           {/* rest codes will be here */}
-          <Layout recent={{title: "Most readed articles"}}/>
+          <Layout title={"Most readed articles"} />
         </StyleProvider>
       </div>
     );

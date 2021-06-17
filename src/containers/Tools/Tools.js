@@ -26,7 +26,7 @@ export default class Tools extends Component {
         <StyleProvider
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
-          <Layout />
+          <Layout title={"Related Post"} label={"tools"} />
         </StyleProvider>
       </div>
     );

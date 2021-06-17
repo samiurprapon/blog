@@ -26,7 +26,7 @@ export default class Philosophy extends Component {
         <StyleProvider
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
-          <Layout />
+          <Layout title={"Related Post"} label={"philosophy"} />
         </StyleProvider>
       </div>
     );
