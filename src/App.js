@@ -53,7 +53,7 @@ class App extends Component {
                 <Route exact path="/tools" component={Tools} />
                 <Route
                   exact
-                  path="/blog/:title/:issueNumber"
+                  path="/:title/:issueNumber"
                   component={BlogPost}
                 />
               </Switch>

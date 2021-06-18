@@ -14,7 +14,7 @@ const Card = ({ blog }) => {
   const history = useHistory();
 
   const openBlog = (title, number) => {
-    history.push(`/blog/${title}/${number}`);
+    history.push(`/${title}/${number}`);
   };
 
   useEffect(() => {
