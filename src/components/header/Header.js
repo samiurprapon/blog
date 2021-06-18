@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Headroom from "react-headroom";
 import "./Header.css";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import ToggleSwitch from "../toggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 
 function Header() {

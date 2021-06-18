@@ -12,7 +12,7 @@ const LoaderContainer = styled.span`
 
 const Loader = () => (
   <LoaderContainer>
-    <LoaderSvg fill="#fca326" />
+    <LoaderSvg fill="#551A8B" />
   </LoaderContainer>
 );
 
