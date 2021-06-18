@@ -24,4 +24,4 @@
 
 #
 
-If you want to contribute to open source projects but couldn't understand all of this, It's okay. Just follow 👉 [First-Contribution](/GUIDE.md) steps and start supporting open source community.
+If you want to contribute to open source projects but couldn't understand all of this, It's okay. Just follow 👉 [First-Contribution](https://github.com/samiurprapon/blog/blob/main/.github/GUIDE.md) steps and start supporting open source community.
