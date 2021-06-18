@@ -108,7 +108,7 @@ git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/<your-git
 
 I highly encourage the community to step forward and improve this project further. You can fix any reported bug, propose or implement new features, write tests, etc.
 
-Pull requests are welcome! See the [contributor guidelines](/CONTRIBUTING.md) for more details.
+Pull requests are welcome! See the [contributor guidelines](https://github.com/samiurprapon/blog/blob/main/.github/CONTRIBUTING.md) for more details.
 
 # License [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
