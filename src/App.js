@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import { client } from "./utils/Apollo";
 import { StyleProvider } from "./contexts/StyleContext";
@@ -42,22 +42,22 @@ class App extends Component {
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
           <ApolloProvider client={client}>
-            <BrowserRouter>
+            <HashRouter>
               <Header />
 
               <Switch>
-                <Route exact path="/blog/" component={Home} />
-                <Route exact path="/blog/philosophy" component={Philosophy} />
-                <Route exact path="/blog/learning" component={Programming} />
-                <Route exact path="/blog/projects" component={Project} />
-                <Route exact path="/blog/tools" component={Tools} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/philosophy" component={Philosophy} />
+                <Route exact path="/learning" component={Programming} />
+                <Route exact path="/projects" component={Project} />
+                <Route exact path="/tools" component={Tools} />
                 <Route
                   exact
                   path="/blog/:title/:issueNumber"
                   component={BlogPost}
                 />
               </Switch>
-            </BrowserRouter>
+            </HashRouter>
             <Footer />
             <Top />
           </ApolloProvider>

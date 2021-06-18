@@ -28,26 +28,26 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
-            <a href="/blog">Home</a>
+            <a href="/blog/">Home</a>
           </li>
           {
             <li>
-              <Link to="/blog/philosophy">Philosophy</Link>
+              <Link to="/philosophy">Philosophy</Link>
             </li>
           }
           {
             <li>
-              <Link to="/blog/learning">Programmings</Link>
+              <Link to="/learning">Programmings</Link>
             </li>
           }
           {
             <li>
-              <Link to="/blog/projects">Projects</Link>
+              <Link to="/projects">Projects</Link>
             </li>
           }
           {
             <li>
-              <Link to="/blog/tools">Tools</Link>
+              <Link to="/tools">Tools</Link>
             </li>
           }
           <li>
