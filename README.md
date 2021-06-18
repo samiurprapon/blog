@@ -1,4 +1,4 @@
-# Personal Blog  ⚡️  [![Actions Status: deployment](https://github.com/samiurprapon/blog/actions/workflows/deploy.yml/badge.svg) ](https://github.com/samiurprapon/blog/actions?query=workflow%3A"deployment")
+# Personal Blog ⚡️ [![Actions Status: deployment](https://github.com/samiurprapon/blog/actions/workflows/deploy.yml/badge.svg) ](https://github.com/samiurprapon/blog/actions?query=workflow%3A"deployment")
 
 Multipurpose blog to share my views on technology, research, innovations and what I will explore in the near future.
 
@@ -10,35 +10,45 @@ Github [Issues / Blogs](https://github.com/samiurprapon/blog/issues)
 
 <br>
 
-# Getting Started  🚀 
+# Getting Started 🚀
+
 ## Development Environment
+
 - node.js 14.X
 - yarn 1.22.X
 
 ## Installing & Configuration
+
 ### 0. Clone this repository
+
 ```bash
 $ git clone https://github.com/samiurprapon/blog.git
 ```
+
 ### 1. Go into the repository
+
 ```bash
 $ cd blog
 ```
+
 ### 2. Install dependencies
+
 ```bash
 $ yarn install
 ```
+
 ### 3. **Generate a Github Personal Access Token.**
 
 Generate a Github personal access token using these [Instructions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) or simply go and generate from [here](https://github.com/settings/tokens) and `allow` only `repo` and `user` scope.
 
- `Make sure you don't select any scope just generate a simple token without any scope`
+`Make sure you don't select any scope just generate a simple token without any scope`
 
 After that copy your generated token and then encode your token into base 64 using this [Website](http://www.utilities-online.info/base64/)
 
 `Copy your base64 converted token`
 
 ### 4. **Change `/src/config.js`.**
+
 Go to your cloned repository and make the following changes in `/src/config.js`
 
 ```javascript
@@ -60,8 +70,8 @@ const config = {
 };
 ```
 
-
 ### 5. **Write A Blog.**
+
 After doing following changes now you just need to write a blog on repository issues that you have mentioned in your `config.js`
 
 - Open your repository [github issues](https://github.com/samiurprapon/blog/issues)
@@ -70,24 +80,29 @@ After doing following changes now you just need to write a blog on repository is
 - Add a label `blog` on your github issue to make it different from other standard issues. Keep in mind `blog` label is mandatory otherwise it won't show on your website.
 
 ### 6. **Deploy**
+
 0. Build webpage
+
 ```bash
 $ yarn run build
 ```
+
 1. Deploy on github
+
 ```bash
 $ yarn run deploy
 ```
+
 2. Go to `https://github.com/<your-username>/<your-repo-name>/settings/secrets/actions` , click `New repository secret` and add a secret named as `ACCESS_TOKEN` and paste your previously generated Github Personal Access Token as `value`.
 3. **Change `.github/workflows/deploy.yml`.**
+
 ```yml
-        git config --global user.email "your-github-mail-address"
-        git config --global user.name "your-github-username"
-        git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/<your-github-username>/<your-repo-name>.git
+git config --global user.email "your-github-mail-address"
+git config --global user.name "your-github-username"
+git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/<your-github-username>/<your-repo-name>.git
 ```
 
 ---
-
 
 # Contribution
 
@@ -103,7 +118,7 @@ Copyright 2021 Samiur Prapon
 Licensed under the GNU General Public License, Version 2.0 (the "License");
 You may obtain a copy of the License at
 
-   https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+   https://github.com/samiurprapon/blog/blob/main/LICENSE
 
 Everyone is permitted to copy and distribute verbatim copies
 of this license document, but changing it is not allowed.
