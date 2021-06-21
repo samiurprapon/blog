@@ -1,6 +1,7 @@
 const config = {
-  // Github Converted Token (User, repo) from -> https://www.utilities-online.info/base64
-  githubConvertedToken: "Z2hwX3RMaXhOSXRPVDEyNWRmMDZnaWd3dXZwYkNkR3hKMTFMVWRIbg==",
+  // Github Converted Token from -> https://www.utilities-online.info/base64
+  githubConvertedToken:
+    "Z2hwX2hjNUxHY2ROMnZOYVFJMFFPazhHM3NFbHkxTmpTcDIyWVFlMw==",
 
   // Github UserName
   githubUserName: "samiurprapon",
