@@ -39,9 +39,9 @@ $ yarn install
 
 ### 3. **Generate a Github Personal Access Token.**
 
-Generate a Github personal access token using these [Instructions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) or simply go and generate from [here](https://github.com/settings/tokens) and `allow` only `repo` and `user` scope.
+Generate a Github personal access token using these [Instructions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) or simply go and generate from [here](https://github.com/settings/tokens).
 
-`Make sure you don't select any scope just generate a simple token without any scope`
+**`Make sure you don't select any scope just generate a simple token without any scope`**
 
 After that copy your generated token and then encode your token into base 64 using this [Website](http://www.utilities-online.info/base64/)
 
