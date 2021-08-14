@@ -6,7 +6,6 @@ import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import "./BlogPost.css";
 
-
 import config from "../../config";
 import Loader from "../../components/loader/Loader";
 import RecentHeader from "../../components/recentHeader/RecentHeader";
@@ -92,43 +91,49 @@ export default function BlogPost() {
   return (
     <div className="center">
       <section className="post">
-          {post.title && (
-            <PostContainer>
-              <PostTitle>{post.title}</PostTitle>
-              <div>
-                <AuthorDetails>
-                  <AuthorAvatar
-                    src={post.author.avatarUrl}
-                    alt={post.author.login}
-                  />
-                  <div>
-                    <AuthorName>{post.author.login}</AuthorName>
-                    <PostDate>
-                      {moment(post.updatedAt).format("DD MMM YYYY")} .
-                      {readingTime(post.body).minutes} Min Read .
-                      <PostDateLink href={post.url} target="_black">
-                        View On Github
-                      </PostDateLink>
-                    </PostDate>
-                  </div>
-                </AuthorDetails>
-              </div>
+        {post.title && (
+          <PostContainer>
+            <PostTitle>{post.title}</PostTitle>
+            <div>
+              <AuthorDetails>
+                <AuthorAvatar
+                  src={post.author.avatarUrl}
+                  alt={post.author.login}
+                />
+                <div>
+                  <AuthorName>{post.author.login}</AuthorName>
+                  <PostDate>
+                    {moment(post.updatedAt).format("DD MMM YYYY")} .
+                    {readingTime(post.body).minutes} Min Read .
+                    <PostDateLink href={post.url} target="_black">
+                      View On Github
+                    </PostDateLink>
+                  </PostDate>
+                </div>
+              </AuthorDetails>
+            </div>
+            <div className="article">
               <Markdown
                 options={{
                   overrides: {
-                    a: {
-                      component: HyperLink,
-                    },
+                    // a: {
+                    //   component: HyperLink,
+                    // },
                     pre: {
                       component: CodeBlock,
                     },
+                    slugify: (str) => str,
+                    disableParsingRawHTML: true,
+                    wrapper: "aside",
+                    forceWrapper: true,
                   },
                 }}
               >
                 {post.body}
               </Markdown>
-            </PostContainer>
-          )}
+            </div>
+          </PostContainer>
+        )}
       </section>
 
       <section className="sidebar">

@@ -6,7 +6,7 @@ const StyledCategory = styled.div`
   background: #009bbb;
   border-radius: 4px;
   padding: 3px 15px;
-  font-size: 12px;
+  font-size: 14px;
   // text-transform: uppercase;
   font-weight: 300;
   line-height: 28px;
