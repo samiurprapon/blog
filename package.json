@@ -11,7 +11,7 @@
     "graphql": "^15.8.0",
     "markdown-to-jsx": "^7.1.6",
     "moment": "^2.29.1",
-    "react": "^17.0.2",
+    "react": "^18.2.0",
     "react-dom": "^17.0.2",
     "react-easy-emoji": "^1.6.1",
     "react-headroom": "^3.2.0",
