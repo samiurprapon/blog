@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.007eff10.css",
-    "main.js": "/blog/static/js/main.3807fcb7.js",
+    "main.css": "/blog/static/css/main.d975b992.css",
+    "main.js": "/blog/static/js/main.cdaa8934.js",
     "static/css/3178.f7e6e42c.chunk.css": "/blog/static/css/3178.f7e6e42c.chunk.css",
-    "static/js/3178.11efbfdf.chunk.js": "/blog/static/js/3178.11efbfdf.chunk.js",
+    "static/js/3178.2c085362.chunk.js": "/blog/static/js/3178.2c085362.chunk.js",
     "react-syntax-highlighter/refractor-core-import.js": "/blog/static/js/react-syntax-highlighter/refractor-core-import.dad15d7d.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/blog/static/js/react-syntax-highlighter_languages_refractor_abap.35eeb77b.chunk.js",
     "react-syntax-highlighter_languages_refractor_abnf.js": "/blog/static/js/react-syntax-highlighter_languages_refractor_abnf.04279a02.chunk.js",
@@ -286,10 +286,10 @@
     "static/media/Montserrat-Regular.ttf": "/blog/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/blog/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "index.html": "/blog/index.html",
-    "main.007eff10.css.map": "/blog/static/css/main.007eff10.css.map",
-    "main.3807fcb7.js.map": "/blog/static/js/main.3807fcb7.js.map",
+    "main.d975b992.css.map": "/blog/static/css/main.d975b992.css.map",
+    "main.cdaa8934.js.map": "/blog/static/js/main.cdaa8934.js.map",
     "3178.f7e6e42c.chunk.css.map": "/blog/static/css/3178.f7e6e42c.chunk.css.map",
-    "3178.11efbfdf.chunk.js.map": "/blog/static/js/3178.11efbfdf.chunk.js.map",
+    "3178.2c085362.chunk.js.map": "/blog/static/js/3178.2c085362.chunk.js.map",
     "refractor-core-import.dad15d7d.chunk.js.map": "/blog/static/js/react-syntax-highlighter/refractor-core-import.dad15d7d.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.35eeb77b.chunk.js.map": "/blog/static/js/react-syntax-highlighter_languages_refractor_abap.35eeb77b.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abnf.04279a02.chunk.js.map": "/blog/static/js/react-syntax-highlighter_languages_refractor_abnf.04279a02.chunk.js.map",
@@ -570,7 +570,7 @@
     "react-syntax-highlighter_languages_refractor_zig.eaaada44.chunk.js.map": "/blog/static/js/react-syntax-highlighter_languages_refractor_zig.eaaada44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.007eff10.css",
-    "static/js/main.3807fcb7.js"
+    "static/css/main.d975b992.css",
+    "static/js/main.cdaa8934.js"
   ]
 }
