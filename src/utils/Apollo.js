@@ -1,26 +1,23 @@
-import ApolloClient from "apollo-boost";
+import atob from 'atob';
+import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 
-import config from "../config";
+import config from '../config';
 
-export const client = new ApolloClient({
-  uri: "https://api.github.com/graphql",
-  request: (operation) => {
-    operation.setContext({
-      headers: {
-        authorization: `Bearer ${atob(config.githubConvertedToken)}`,
-      },
-    });
-  },
+const authLink = setContext((_, { headers }) => {
+	return {
+		headers: {
+			...headers,
+			authorization: `Bearer ${atob(config.githubConvertedToken)}`,
+		},
+	};
 });
 
-export const userClient = (token) =>
-  new ApolloClient({
-    uri: "https://api.github.com/graphql",
-    request: (operation) => {
-      operation.setContext({
-        headers: {
-          authorization: `Bearer ${token}`,
-        },
-      });
-    },
-  });
+export const client = new ApolloClient({
+	link: authLink.concat(
+		createHttpLink({
+			uri: `https://api.github.com/graphql`,
+		})
+	),
+	cache: new InMemoryCache(),
+});

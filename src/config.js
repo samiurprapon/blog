@@ -1,19 +1,20 @@
 const config = {
-  // Github Converted Token from -> https://www.utilities-online.info/base64
-  githubConvertedToken:
-    "Z2hwX2hjNUxHY2ROMnZOYVFJMFFPazhHM3NFbHkxTmpTcDIyWVFlMw==",
+	// Github Converted Token from -> https://www.utilities-online.info/base64
+	githubConvertedToken: 'Z2hwX3Nka3lwMmZBZElwVVhrTXhrbDVCTVFUczZsSUhSbzNBcWpuVw==',
 
-  // Github UserName
-  githubUserName: "samiurprapon",
+	token: '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',
 
-  // Github Repo Name
-  githubRepo: "blog",
+	// Github UserName
+	githubUserName: 'samiurprapon',
 
-  // Personal Blog Title
-  title: "Samiur Prapon's Blog",
+	// Github Repo Name
+	githubRepo: 'blog',
 
-  // Personal Blog Subtitle
-  subtitle: "Software Enthusiast",
+	// Personal Blog Title
+	title: "Samiur Prapon's Blog",
+
+	// Personal Blog Subtitle
+	subtitle: 'Software Enthusiast',
 };
 
 export default config;
