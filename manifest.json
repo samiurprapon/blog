@@ -1,19 +1,19 @@
 {
-  "short_name": "Saminux Blog",
-  "name": "Samiur Prapon's Blog",
+  "short_name": "Samiur Prapon Portfolio",
+  "name": "Saad Pasta Portfolio",
   "icons": [
     {
-      "src": "/blog/favicon.ico",
-      "sizes": "32x32 16x16",
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "/blog/android-chrome-192x192.png",
+      "src": "/android-chrome-192x192.png ",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/blog/android-chrome-384x384.png",
+      "src": "/android-chrome-384x384.png",
       "type": "image/png",
       "sizes": "384x384"
     }
