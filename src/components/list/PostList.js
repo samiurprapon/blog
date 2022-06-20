@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { gql } from "apollo-boost";
-import { useQuery } from "@apollo/react-hooks";
+import { gql, useQuery } from '@apollo/client';
 
 import config from "../../config";
 import Loader from "../loader/Loader";
