@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.d975b992.css",
-    "main.js": "/blog/static/js/main.cdaa8934.js",
+    "main.js": "/blog/static/js/main.d1a95de1.js",
     "static/css/3178.f7e6e42c.chunk.css": "/blog/static/css/3178.f7e6e42c.chunk.css",
     "static/js/3178.2c085362.chunk.js": "/blog/static/js/3178.2c085362.chunk.js",
     "react-syntax-highlighter/refractor-core-import.js": "/blog/static/js/react-syntax-highlighter/refractor-core-import.dad15d7d.chunk.js",
@@ -287,7 +287,7 @@
     "static/media/Agustina.woff": "/blog/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "index.html": "/blog/index.html",
     "main.d975b992.css.map": "/blog/static/css/main.d975b992.css.map",
-    "main.cdaa8934.js.map": "/blog/static/js/main.cdaa8934.js.map",
+    "main.d1a95de1.js.map": "/blog/static/js/main.d1a95de1.js.map",
     "3178.f7e6e42c.chunk.css.map": "/blog/static/css/3178.f7e6e42c.chunk.css.map",
     "3178.2c085362.chunk.js.map": "/blog/static/js/3178.2c085362.chunk.js.map",
     "refractor-core-import.dad15d7d.chunk.js.map": "/blog/static/js/react-syntax-highlighter/refractor-core-import.dad15d7d.chunk.js.map",
@@ -571,6 +571,6 @@
   },
   "entrypoints": [
     "static/css/main.d975b992.css",
-    "static/js/main.cdaa8934.js"
+    "static/js/main.d1a95de1.js"
   ]
 }
