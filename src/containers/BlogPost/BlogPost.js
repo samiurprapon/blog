@@ -1,33 +1,33 @@
-import React, { useState, useEffect } from "react";
-import moment from "moment";
-import Markdown from "markdown-to-jsx";
-import readingTime from "reading-time";
+import React, { useState, useEffect } from 'react';
+import moment from 'moment';
+import Markdown from 'markdown-to-jsx';
+import readingTime from 'reading-time';
 import { gql, useQuery } from '@apollo/client';
 
-import "./BlogPost.css";
+import './BlogPost.css';
 
-import config from "../../config";
-import Loader from "../../components/loader/Loader";
-import RecentHeader from "../../components/recentHeader/RecentHeader";
-import RecentPost from "../../components/recentPost/RecentPost";
+import config from '../../config';
+import Loader from '../../components/loader/Loader';
+import RecentHeader from '../../components/recentHeader/RecentHeader';
+import RecentPost from '../../components/recentPost/RecentPost';
 
-import Profile from "../../components/profile/Profile";
+import Profile from '../../components/profile/Profile';
 
-import { CodeBlock } from "../../components/markDown/MarkDown";
+import { CodeBlock } from '../../components/markDown/MarkDown';
 
-import PostContainer from "../../components/post/PostContainer";
-import PostTitle from "../../components/post/PostTitle";
-import PostDate from "../../components/post/PostDate";
+import PostContainer from '../../components/post/PostContainer';
+import PostDate from '../../components/post/PostDate';
 // import PostDateLink from "../../components/post/PostDateLink";
-import PostReadingTime from "../../components/post/PostReadingTime";
+import PostReadingTime from '../../components/post/PostReadingTime';
 
-import AuthorAvatar from "../../components/post/Author/AuthorAvatar";
-import AuthorName from "../../components/post/Author/AuthorName";
-import AuthorDetails from "../../components/post/Author/AuthorDetails";
+import AuthorAvatar from '../../components/post/Author/AuthorAvatar';
+import AuthorName from '../../components/post/Author/AuthorName';
+import AuthorDetails from '../../components/post/Author/AuthorDetails';
+import PostTitle from '../../components/post/PostTitle';
 
 export default function BlogPost() {
-  const issueNumber = parseInt(window.location.href.split("/").pop());
-  const GET_POSTS = gql`{
+	const issueNumber = parseInt(window.location.href.split('/').pop());
+	const GET_POSTS = gql`{
     repository(owner: "${config.githubUserName}", name: "${config.githubRepo}") {
       issue(number: ${issueNumber}) {
         isReadByViewer 
@@ -74,29 +74,30 @@ export default function BlogPost() {
     }
   }
   `;
-  const [post, setPost] = useState([]);
-  const { loading, error, data } = useQuery(GET_POSTS);
+	const [post, setPost] = useState([]);
+	const { loading, error, data } = useQuery(GET_POSTS);
 
-  useEffect(() => {
-    if (!loading) {
-      if (data) {
-        const issues = data.repository.issue;
-        setPost(issues);
-      }
-    }
-  }, [loading, error, data]);
+	useEffect(() => {
+		if (!loading) {
+			if (data) {
+				const issues = data.repository.issue;
+				setPost(issues);
+			}
+		}
+	}, [loading, error, data]);
 
-  if (loading) {
-    return <Loader />;
-  }
+	if (loading) {
+		return <Loader />;
+	}
 
-  return (
+	return (
 		<div className='center'>
 			<section className='post'>
 				{post.title && (
 					<PostContainer>
 						<PostTitle>{post.title}</PostTitle>
-						<div>
+
+						<div className='meta-post'>
 							<AuthorDetails>
 								<AuthorAvatar src={post.author.avatarUrl} alt={post.author.login} />
 								<div>

@@ -26,20 +26,20 @@ const Card = ({ blog }) => {
   }, [blog.labels.nodes]);
 
   return (
-    <CardContainer>
-      <CardHeader>
-        <>
-          {labels.map((value, i) => {
-            return <CardCategory value={value} key={i} />;
-          })}
-        </>
-        <CardReadingTime time={readingTime(blog.body).minutes} />
-      </CardHeader>
-      <div onClick={() => openBlog(blog.title, blog.number)}>
-        <CardTitle>{blog.title}</CardTitle>
-        <CardDescription>{blog.bodyText}</CardDescription>
-      </div>
-    </CardContainer>
-  );
+		<CardContainer>
+			<CardHeader>
+				<>
+					{labels.map((value, i) => {
+						return <CardCategory value={value} key={i} />;
+					})}
+				</>
+				<CardReadingTime time={readingTime(blog.body).minutes} />
+			</CardHeader>
+			<div onClick={() => openBlog(blog.title, blog.number)}>
+				<CardTitle>{blog.title}</CardTitle>
+				<CardDescription>{blog.bodyText}</CardDescription>
+			</div>
+		</CardContainer>
+	);
 };
 export default Card;
