@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.45a49559.css",
-    "main.js": "/blog/static/js/main.13c3cfc5.js",
-    "static/css/3178.2c549fcd.chunk.css": "/blog/static/css/3178.2c549fcd.chunk.css",
+    "main.css": "/blog/static/css/main.8f8dabca.css",
+    "main.js": "/blog/static/js/main.14cb15cf.js",
+    "static/css/3178.f7e6e42c.chunk.css": "/blog/static/css/3178.f7e6e42c.chunk.css",
     "static/js/3178.2c085362.chunk.js": "/blog/static/js/3178.2c085362.chunk.js",
     "react-syntax-highlighter/refractor-core-import.js": "/blog/static/js/react-syntax-highlighter/refractor-core-import.dad15d7d.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/blog/static/js/react-syntax-highlighter_languages_refractor_abap.35eeb77b.chunk.js",
@@ -286,9 +286,9 @@
     "static/media/Montserrat-Regular.ttf": "/blog/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/blog/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "index.html": "/blog/index.html",
-    "main.45a49559.css.map": "/blog/static/css/main.45a49559.css.map",
-    "main.13c3cfc5.js.map": "/blog/static/js/main.13c3cfc5.js.map",
-    "3178.2c549fcd.chunk.css.map": "/blog/static/css/3178.2c549fcd.chunk.css.map",
+    "main.8f8dabca.css.map": "/blog/static/css/main.8f8dabca.css.map",
+    "main.14cb15cf.js.map": "/blog/static/js/main.14cb15cf.js.map",
+    "3178.f7e6e42c.chunk.css.map": "/blog/static/css/3178.f7e6e42c.chunk.css.map",
     "3178.2c085362.chunk.js.map": "/blog/static/js/3178.2c085362.chunk.js.map",
     "refractor-core-import.dad15d7d.chunk.js.map": "/blog/static/js/react-syntax-highlighter/refractor-core-import.dad15d7d.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.35eeb77b.chunk.js.map": "/blog/static/js/react-syntax-highlighter_languages_refractor_abap.35eeb77b.chunk.js.map",
@@ -570,7 +570,7 @@
     "react-syntax-highlighter_languages_refractor_zig.eaaada44.chunk.js.map": "/blog/static/js/react-syntax-highlighter_languages_refractor_zig.eaaada44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45a49559.css",
-    "static/js/main.13c3cfc5.js"
+    "static/css/main.8f8dabca.css",
+    "static/js/main.14cb15cf.js"
   ]
 }
