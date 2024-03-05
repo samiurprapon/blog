@@ -1,6 +1,6 @@
 const config = {
 	// Github Converted Token from -> https://www.utilities-online.info/base64
-	githubConvertedToken: 'Z2l0aHViX3BhdF8xMUFHQVlVRFkwQnFSUENpbkE5N0J0X3hwVGl0NExBMWZlMURjT2V6NTZQRHN4S2FhdGhMa2YzMTJuMmd4M28wVGlZRFk2V1kzRndnNHJRbU1B',
+	githubConvertedToken: 'Z2hwX2c1NDZEUUpxVWZCaGZRNFFjMk9MTmg3am42UG8wTzB0TVZuOA==',
 	
 	// Github UserName
 	githubUserName: 'samiurprapon',
