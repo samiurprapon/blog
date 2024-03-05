@@ -31,4 +31,7 @@ jobs:
         run: yarn
       - name: Deploy to GH Pages 🎨
         run: |
+          git config --global user.email ${{secrets.SECRET_EMAIL}}
+          git config --global user.name ${{secrets.SECRET_NAME}}
+          
           CI=false yarn run deploy
